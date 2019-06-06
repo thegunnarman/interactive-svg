@@ -1,0 +1,43 @@
+#left-ear {
+  transform-origin: 44px 50px;
+  transition: all .5s linear;
+}
+
+#right-ear {
+  transform-origin: 212px 50px;
+  transition: all .5s linear;
+}
+
+#bear:hover #left-ear {
+  transform: translateY(-10px);
+}
+
+#bear:hover #right-ear {
+  transform: translateY(-10px);
+}
+
+#left-eye {
+  transform-origin: 85px 107px;
+  animation: eye-move 3s infinite;
+}
+
+#right-eye {
+  transform-origin: 171px 107px;
+  animation: eye-move 3s infinite;
+}
+
+@keyframes eye-move {
+
+  0% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+
+}
